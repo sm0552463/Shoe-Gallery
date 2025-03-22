@@ -8,7 +8,8 @@
     "start": "node server.js",
     "server": "nodemon server.js",
     "clients": "npm start --prefix ./clients",
-    "dev": "concurrently \"npm run server\" \"npm run clients\""
+    "dev": "concurrently \"npm run server\" \"npm run clients\"",
+    "build": "cd client && npm install && npm run build"
   },
   "browser": {
     "crypto": "crypto-browserify",
