@@ -9,7 +9,7 @@
     "server": "nodemon server.js",
     "clients": "npm start --prefix ./clients",
     "dev": "concurrently \"npm run server\" \"npm run clients\"",
-    "build": "cd client && npm install && npm run build"
+    "build": "cd clients && npm install && react-scripts build"
   },
   "browser": {
     "crypto": "crypto-browserify",
